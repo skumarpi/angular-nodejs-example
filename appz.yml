@@ -1,0 +1,19 @@
+app:
+    name: angular-nodejs
+    code: angularnodejs
+    notify: appzdev@cloudbourne.co
+build:
+    version: 0.1
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: nodeangular-14.17
+deploy:
+    context: alpha/DEV
+    replicas: 1
+    port:
+    - 3080
+    
+properties:
+  
+    revision: 21
