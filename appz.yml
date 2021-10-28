@@ -9,7 +9,7 @@ build:
     output_files: output/*.zip
     image_template: nodeangular-14.17
 deploy:
-    context: alpha/DEV
+    context: skumarpi/DEV
     replicas: 1
     port:
     - 3080
