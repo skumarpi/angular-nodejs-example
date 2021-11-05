@@ -1,13 +1,17 @@
 app:
     name: angular-nodejs
     code: angularnodejs
-    notify: appzdev@cloudbourne.co
+    notify: skumar@ecloudcontrol.com
+    
 build:
     version: 0.1
     env: DEV
+    args:
+      WORK_DIR: /appz/server/my-app
     build_file: none
     output_files: output/*.zip
     image_template: nodeangular-14.17
+    
 deploy:
     context: skumarpi/DEV
     replicas: 1
